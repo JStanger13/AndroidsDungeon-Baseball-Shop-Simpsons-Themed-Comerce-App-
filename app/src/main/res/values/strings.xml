@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidsDungeon</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="radioactive_man">radioactive_man</string>
+    <string name="malibu_stacy">malibu_stacy</string>
+
+</resources>

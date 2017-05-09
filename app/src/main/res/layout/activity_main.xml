@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nyc.justinstanger.androidsdungeon.MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/store_pic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:id="@+id/shop"
+        android:src="@drawable/comicbookshoppic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/store_tite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="all items"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="#e2e6cb08"
+        android:background="#3877bf"
+        />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/barlayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#a6f4f00b"
+        >
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <ImageButton
+            android:id="@+id/allitems"
+            android:background="@drawable/storeicon"
+            android:backgroundTint = "#7e1515"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/comicicon"
+            android:background="@drawable/comic_small"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="33dp"
+            android:backgroundTint = "#7e1515"/>
+
+        <ImageButton
+            android:id="@+id/filmicon"
+            android:background="@drawable/popcorn_small"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="33dp"
+            android:backgroundTint = "#7e1515"/>
+
+        <ImageButton
+            android:id="@+id/collectableicon"
+            android:background="@drawable/collectables_small"
+            android:backgroundTint = "#7e1515"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="33dp"/>
+
+
+        <ImageButton
+            android:id="@+id/go_to_checkout"
+            android:background="@drawable/cart_small"
+            android:backgroundTint = "#7e1515"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"/>
+
+</LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/topyellow"
+        android:layout_below="@id/store_pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:layout_above="@id/barlayout"
+        android:adjustViewBounds="true"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:orientation="horizontal"
+        android:layout_below="@id/store_pic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/barlayout"
+        android:foregroundGravity="center"
+        android:background="#3877bf"
+        />
+
+
+</RelativeLayout>
+
